@@ -1,0 +1,317 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* .artist-image {
+    width: 300px;
+} */
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+.accordion .accordion-item .label {
+    cursor: pointer;
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+.accordion .accordion-item .content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.tabs .tab-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.tabs .tab-list li {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ddd;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+}
+
+.tabs .tab-list li.active {
+    background-color: #eee;
+    border-bottom: none;
+}
+
+.tabs .tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.tabs .tab-content.active {
+    display: block;
+}
+
+html{
+    box-sizing:border-box;
+}
+*, *::before, *:after {
+    box-sizing: inherit;
+}
+
+body { overflow-y: scroll; }
+
+main{
+    width: auto;
+    /*could use width:100% */
+    max-width: 1200px;}
+
+header{
+    text-align: center;
+    padding-top: 20px;
+    background:
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
+    radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
+    linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
+    background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
+    background-color: #840b2a;
+    height: 8em;
+    box-shadow: 4px 4px 10px 10px #aaa;
+ 
+}
+
+p{
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 2.1em;
+    font-weight:bolder;
+    color: brown;
+    line-height: 1.5;
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 0px;
+    margin: 10px;
+   
+}
+h1 {
+    font-size: 3.3em;
+    font-family: 'Bebas Neue', Arial, sans-serif; 
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}
+h2{
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: left;
+    font-weight: lighter;
+    color: red;
+    
+}
+ span{
+    display: inline-block;
+ }
+     
+     figure{
+        float: right;
+        padding-left: 20px;
+        margin: 2px;
+        position: relative;
+     }
+     
+ 
+ img{
+
+        max-width: 90%;
+        display:flex;
+        float: none;
+        margin: 0 auto;
+        
+     }   
+
+/* =============================================
+     2. nav and  list information
+=============================================*/
+nav li{
+    list-style: none;
+}
+
+nav a:link{
+    color: rgb(43, 23, 169);
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 1.0s;
+    transition-timing-function: ease-in-out;
+}
+
+a:visited{
+    color: rgb(128, 0, 128);
+}
+
+h1 + p a:link {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+}
+
+h1 + p a:visited{
+    color: rgb(226, 39, 39);
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: darkslategray;
+}
+a {display: block; padding: 0 16px;text-decoration:none;font-weight:bold;
+    color: navajowhite;
+    transition: 1s;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#nav {
+   
+    width: 960px;
+    height: 48px;
+    background-color: hsl(0, 67%, 64%);
+    margin: 0 auto;
+}
+
+li + li  a {border-left:none solid black;}
+
+a {display: block; padding: 0 18px;text-decoration:none; 
+    color:hsl(0, 0%, 60%);}
+
+ul {
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    float: left;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    width: 300px;
+    line-height: 40px;
+    text-align: center;
+    padding: 3px 10px;
+    
+}
+a :after{ 
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    content:''; /* Required to display content */
+    position: absolute; /* Sets the position absolute to the top div */
+    top: 0;
+    left: 35%;/* position the little arrow */
+    margin-left: -15px;
+    margin-top:-15px; /* Set margin equal to border px */
+    width: 0;
+    z-index:1;
+    height: 0;
+    border-bottom: solid 15px #FFF; /* Creates the arrow pointing up, to change to a notch instead user border-top */
+    border-left: solid 15px transparent; /* Creates triangle effect */
+    /*border-right: solid 15px transparent; /* Creates triangle effect */
+    }
+    
+
+a:hover {
+    color: hsl(0, 0%, 100%);
+    background: #666;
+    transition: 1s;
+    
+}
+ul li ul {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    display: none;
+}
+
+ul li:hover>ul {
+    display: block;
+}
+ul li ul li li {
+    float : none; 
+    background: hsl(0, 0%, 93%);
+    margin-top: 2px;
+}
+ul li ul li ul {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    display: none;
+}
+ul li ul li ul li {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    display: none;
+}
+/* =============================================
+    3. Footer information
+=============================================*/
+footer {
+
+    margin-top: 20px;
+    display: inline-table;
+    background-color: brown;
+    color: rgb(0, 0, 0);
+    text-align:center;
+    font-size: 0.9 em;
+    padding: 20px;
+    width: 100%;
+    clear: both;
+    box-shadow: 4px 4px 10px 10px #aaa;
+  } 
+
+/* =============================================
+    4. Media query information
+=============================================*/
+@media screen and (max-width: 700px) {
+    article, aside {
+       float: none;
+       width: 100%;
+       margin: 0 auto;
+      
+    }
+}
+
+@media screen and (max-width: 450px){
+  ul{
+      flex-direction: column;
+  }
+
+  li{
+      width: 100%;
+    }
+  
+  
+}
+ 
